@@ -1,25 +1,28 @@
+import Link from "next/link";
 import React from "react";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between p-4">
+    <header className="flex items-center justify-between p-4 border-b-zinc-400 border-b-[1px]">
       <h1 className="text-4xl font-bold">Logo</h1>
 
       <nav>
         <ul className="flex items-center gap-3">
           <li>
-            <a href="">Home</a>
+            <Link className="hover:text-zinc-400 transition-all" href="/">Home</Link>
           </li>
           <li>
-            <a href="">O que fazemos</a>
+            <Link className="hover:text-zinc-400 transition-all" href="/">O que fazemos</Link>
           </li>
           <li>
-            <a href="">Cases</a>
+            <Link className="hover:text-zinc-400 transition-all" href="/">Cases</Link>
           </li>
         </ul>
       </nav>
 
-      <button className="w-52 py-2 rounded-sm bg-[#0DC74F]">Fale conosco</button>
+      <button className="w-52 py-2 rounded-sm bg-green-500 hover:bg-green-400 transition-all">
+        Fale conosco
+      </button>
     </header>
   );
 };
