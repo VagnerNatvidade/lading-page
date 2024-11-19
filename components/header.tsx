@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import Button from "./button";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between p-4 border-b-zinc-600 border-b-[1px]">
+    <header className="flex items-center justify-between px-8 py-4 border-b-zinc-600 border-b-[1px]">
       <h1 className="text-4xl font-bold">Logo</h1>
 
       <nav>
@@ -26,11 +27,9 @@ const Header = () => {
         </ul>
       </nav>
 
-      <button
-        className={`w-52 py-2 rounded-sm bg-button hover:bg-green-400 transition-all`}
-      >
-        Fale conosco
-      </button>
+      <div className="bg-button rounded-sm hover:opacity-90 transition-all cursor-pointer">
+        <Button title="Fale conosco" />
+      </div>
     </header>
   );
 };
