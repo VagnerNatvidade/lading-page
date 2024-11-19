@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import Button from "./button";
 
 const Header = () => {
   return (
@@ -27,7 +26,11 @@ const Header = () => {
         </ul>
       </nav>
 
-      <Button title="Fale conosco" />
+      <button
+        className={`w-52 py-2 rounded-sm bg-green-500 hover:bg-green-400 transition-all`}
+      >
+        Fale conosco
+      </button>
     </header>
   );
 };
