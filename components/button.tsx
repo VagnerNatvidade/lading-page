@@ -5,7 +5,17 @@ interface ButtonProps {
 }
 
 const Button = ({ title }: ButtonProps) => {
-  return <button className="w-52 py-2 ">{title}</button>;
+  const buttonType = () => {
+    if (title === "Fale conosco") {
+      return `w-52 bg-button`;
+    }
+
+    return ` bg-white text-primary font-bold`;
+  };
+
+  return (
+    <button className={`${buttonType()} w-52 py-2 rounded-sm`}>{title}</button>
+  );
 };
 
 export default Button;

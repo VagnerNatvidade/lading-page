@@ -27,9 +27,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className="bg-button rounded-sm hover:opacity-90 transition-all cursor-pointer">
-        <Button title="Fale conosco" />
-      </div>
+      <Button title="Fale conosco" />
     </header>
   );
 };

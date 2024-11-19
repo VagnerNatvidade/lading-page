@@ -14,9 +14,7 @@ export default function Home() {
             Somos uma agência de performance digital, aceleramos vendas e
             aquisição de leads para grandes marcas.
           </p>
-          <div className="w-max rounded-sm bg-white text-primary font-bold">
-            <Button title="Aumentar vendas" />
-          </div>
+          <Button title="Aumentar vendas" />
         </div>
       </main>
     </div>
