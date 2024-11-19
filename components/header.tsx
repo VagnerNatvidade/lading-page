@@ -4,11 +4,11 @@ import Button from "./button";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between px-8 py-4 border-b-zinc-600 border-b-[1px]">
+    <header className="flex items-center justify-between px-40 py-4 border-b-zinc-600 border-b-[1px]">
       <h1 className="text-4xl font-bold">Logo</h1>
 
       <nav>
-        <ul className="flex items-center gap-3">
+        <ul className="flex items-center gap-8">
           <li>
             <Link className="hover:text-zinc-400 transition-all" href="/">
               Home

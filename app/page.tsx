@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <main className="mt-40 px-8">
-        <div className="w-[800px]">
-          <h1 className="text-7xl font-bold">
+      <main className="mt-40 px-40">
+        <div className="w-[550px]">
+          <h1 className="text-5xl font-bold">
             Melhor agência de marketing do bairro
           </h1>
-          <p className="my-8 text-3xl opacity-85 ">
+          <p className="my-8 text-xl opacity-85 ">
             Somos uma agência de performance digital, aceleramos vendas e
             aquisição de leads para grandes marcas.
           </p>
