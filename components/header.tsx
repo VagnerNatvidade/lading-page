@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Button from "./button";
 
 const Header = () => {
   return (
@@ -9,20 +10,24 @@ const Header = () => {
       <nav>
         <ul className="flex items-center gap-3">
           <li>
-            <Link className="hover:text-zinc-400 transition-all" href="/">Home</Link>
+            <Link className="hover:text-zinc-400 transition-all" href="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link className="hover:text-zinc-400 transition-all" href="/">O que fazemos</Link>
+            <Link className="hover:text-zinc-400 transition-all" href="/">
+              O que fazemos
+            </Link>
           </li>
           <li>
-            <Link className="hover:text-zinc-400 transition-all" href="/">Cases</Link>
+            <Link className="hover:text-zinc-400 transition-all" href="/">
+              Cases
+            </Link>
           </li>
         </ul>
       </nav>
 
-      <button className="w-52 py-2 rounded-sm bg-green-500 hover:bg-green-400 transition-all">
-        Fale conosco
-      </button>
+      <Button />
     </header>
   );
 };
